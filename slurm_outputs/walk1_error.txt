@@ -1,0 +1,20 @@
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/uv-0.9.7.dist-info/METADATA'
+
+/var/slurm_spool/job23298441/slurm_script: line 44: /cluster/work/sebasrb/zeroth/env/bin/uv: Permission denied
+2025-11-06 18:14:20.769218: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1762449261.210194  244098 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1762449261.469138  244098 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1762449262.990306  244098 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449262.990403  244098 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449262.990419  244098 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449262.990430  244098 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/utils/experiments.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Traceback (most recent call last):
+  File "/cluster/work/sebasrb/zeroth-walking/train.py", line 1477, in <module>
+    class ZbotWalkingTask(ksim.PPOTask[ZbotWalkingTaskConfig]):
+  File "/cluster/work/sebasrb/zeroth-walking/train.py", line 1902, in ZbotWalkingTask
+    def get_model(self, params: ksim.task.rl.InitParams) -> Model:
+                                ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'ksim.task.rl' has no attribute 'InitParams'
