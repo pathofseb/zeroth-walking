@@ -1901,7 +1901,7 @@ class ZbotWalkingTask(ksim.PPOTask[ZbotWalkingTaskConfig]):
 
     def get_model(self, params: Any) -> Model:
         return Model(
-            params.key,
+            params,
             num_inputs=NUM_ACTOR_INPUTS,
             num_outputs=NUM_JOINTS,
             min_std=0.03,
