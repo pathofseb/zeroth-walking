@@ -6,7 +6,7 @@ import math
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Self, TypedDict
+from typing import Any, Self, TypedDict
 
 import attrs
 import distrax
@@ -1899,7 +1899,7 @@ class ZbotWalkingTask(ksim.PPOTask[ZbotWalkingTaskConfig]):
             min_level=0.5,
         )
 
-    def get_model(self, params: ksim.task.rl.InitParams) -> Model:
+    def get_model(self, params: Any) -> Model:
         return Model(
             params.key,
             num_inputs=NUM_ACTOR_INPUTS,
