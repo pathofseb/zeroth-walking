@@ -1,20 +1,60 @@
-ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/uv-0.9.7.dist-info/licenses/LICENSE-MIT'
-
-/var/slurm_spool/job23298447/slurm_script: line 44: /cluster/work/sebasrb/zeroth/env/bin/uv: Permission denied
-2025-11-06 18:14:20.768612: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+warning: No `requires-python` value found in the workspace. Defaulting to `>=3.11`.
+Resolved 167 packages in 1ms
+Audited 164 packages in 309ms
+2025-11-06 18:24:00.843660: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-E0000 00:00:1762449261.210155 3111967 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-E0000 00:00:1762449261.468567 3111967 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-W0000 00:00:1762449262.990091 3111967 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1762449262.990131 3111967 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1762449262.990139 3111967 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1762449262.990144 3111967 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+E0000 00:00:1762449840.858649 3120360 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1762449840.863781 3120360 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1762449840.877666 3120360 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449840.877713 3120360 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449840.877719 3120360 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449840.877724 3120360 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
 /cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/utils/experiments.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
   import pkg_resources
+2025-11-06 18:24:20.461848: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1762449860.477551 3120392 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1762449860.482728 3120392 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1762449860.496691 3120392 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449860.496737 3120392 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449860.496743 3120392 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449860.496748 3120392 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/utils/experiments.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-06 18:24:35.566181: I external/xla/xla/pjrt/pjrt_api.cc:118] GetPjrtApi was found for cuda at /cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/jax_plugins/xla_cuda12/xla_cuda_plugin.so
+2025-11-06 18:24:35.566624: I external/xla/xla/pjrt/pjrt_api.cc:96] PJRT_Api is set for device type cuda
+INFO:2025-11-06 18:24:35,569:jax._src.xla_bridge:822: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+2025-11-06 18:24:35.570597: I external/xla/xla/pjrt/pjrt_api.cc:167] The PJRT plugin has PJRT API version 0.75. The framework PJRT API version is 0.75.
+2025-11-06 18:24:35.721634: I external/xla/xla/service/service.cc:163] XLA service 0xa59c0d0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2025-11-06 18:24:35.721678: I external/xla/xla/service/service.cc:171]   StreamExecutor device (0): NVIDIA H100 80GB HBM3, Compute Capability 9.0
+2025-11-06 18:24:35.749922: I external/xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 91301
+2025-11-06 18:24:35.750203: I external/xla/xla/pjrt/pjrt_c_api_client.cc:133] PjRtCApiClient created.
 Traceback (most recent call last):
-  File "/cluster/work/sebasrb/zeroth-walking/train5.py", line 1477, in <module>
-    class ZbotWalkingTask(ksim.PPOTask[ZbotWalkingTaskConfig]):
-  File "/cluster/work/sebasrb/zeroth-walking/train5.py", line 1902, in ZbotWalkingTask
-    def get_model(self, params: ksim.task.rl.InitParams) -> Model:
-                                ^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: module 'ksim.task.rl' has no attribute 'InitParams'
+  File "/cluster/work/sebasrb/zeroth-walking/train5.py", line 2086, in <module>
+    ZbotWalkingTask.launch(
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/mixins/runnable.py", line 50, in launch
+    launcher.launch(cls, *cfgs, use_cli=use_cli)
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/launchers/cli.py", line 40, in launch
+    SingleProcessLauncher().launch(task, *cfgs, use_cli=use_cli_next)
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/launchers/single_process.py", line 31, in launch
+    run_single_process_training(task, *cfgs, use_cli=use_cli)
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/launchers/single_process.py", line 21, in run_single_process_training
+    task_obj.run()
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/ksim/task/rl.py", line 1026, in run
+    self.run_training()
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/ksim/task/rl.py", line 2158, in run_training
+    constants, carry, state = self.initialize_rl_training(mj_model, rng)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/ksim/task/rl.py", line 2071, in initialize_rl_training
+    models, optimizers, opt_states, state = self.load_initial_state(model_rng, load_optimizer=True)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/mixins/train.py", line 392, in load_initial_state
+    models = self._get_models(key)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/mixins/train.py", line 320, in _get_models
+    models = self.get_model(key)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/cluster/work/sebasrb/zeroth-walking/train5.py", line 1904, in get_model
+    params.key,
+    ^^^^^^^^^^
+AttributeError: 'jaxlib._jax.ArrayImpl' object has no attribute 'key'

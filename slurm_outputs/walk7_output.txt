@@ -1,12 +1,8 @@
 Running from directory: 
 Job name: zbot-train-walk7
-Job ID: 23298449
+Job ID: 23298628
 Node(s): idun-07-10
-Collecting uv
-  Downloading uv-0.9.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
-Downloading uv-0.9.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (21.4 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.4/21.4 MB 5.9 MB/s  0:00:03
-Installing collected packages: uv
+Requirement already satisfied: uv in /cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages (0.9.7)
 Installed dependencies:
 absl-py==2.3.1
 aiofiles==25.1.0
@@ -240,5 +236,17 @@ zipp==3.23.0
 Checking JAX backend:
 gpu
 Set MUJOCO_GL=osmesa for headless rendering
-Warning: Could not find run directory
+  [1;36mINFO[0m  [90m2025-11-06 18:24:41[0m [[1;34mxax.task.mixins.compile[0m] Setting JAX logging level to INFO
+  [1;36mINFO[0m  [90m2025-11-06 18:24:41[0m [[1;34mxax.task.mixins.compile[0m] Setting JAX compilation cache directory to /cluster/home/sebasrb/.cache/jax/jaxcache
+  [1;36mINFO[0m  [90m2025-11-06 18:24:41[0m [[1;34mxax.task.mixins.compile[0m] Configuring JAX compilation cache parameters
+ [1;32mSTATUS[0m [90m2025-11-06 18:24:41[0m [[1;34mxax.task.mixins.artifacts[0m] /cluster/work/sebasrb/zeroth-walking/zbot_walking_task/run_4
+  [1;36mINFO[0m  [90m2025-11-06 18:24:41[0m [[1;34mjax._src.xla_bridge[0m] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+ [1;32mSTATUS[0m [90m2025-11-06 18:24:42[0m [[1;34mxax.task.mixins.train[0m] /cluster/work/sebasrb/zeroth-walking/train7.py
+{"status": {"message": "/cluster/work/sebasrb/zeroth-walking/train7.py", "filename": "train.py", "lineno": 714}}
+ [1;32mSTATUS[0m [90m2025-11-06 18:24:42[0m [[1;34mxax.task.mixins.train[0m] zbot_walking_task
+{"status": {"message": "zbot_walking_task", "filename": "train.py", "lineno": 715}}
+ [1;32mSTATUS[0m [90m2025-11-06 18:24:42[0m [[1;34mxax.task.mixins.train[0m] JAX devices: [CudaDevice(id=0)]
+{"status": {"message": "JAX devices: [CudaDevice(id=0)]", "filename": "train.py", "lineno": 716}}
+  [1;36mINFO[0m  [90m2025-11-06 18:24:43[0m [[1;34mxax.task.mixins.train[0m] Starting a new training run
+Training used directory: zbot_walking_task/run_7 (run_7)
 Job finished

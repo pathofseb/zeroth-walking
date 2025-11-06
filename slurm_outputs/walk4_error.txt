@@ -1,295 +1,60 @@
-Using CPython 3.11.14 interpreter at: /cluster/work/sebasrb/zeroth/env/bin/python3.11
-Creating virtual environment at: .venv
 warning: No `requires-python` value found in the workspace. Defaulting to `>=3.11`.
 Resolved 167 packages in 1ms
-Downloading kiwisolver (1.4MiB)
-Downloading jax-cuda12-pjrt (140.1MiB)
-Downloading cryptography (4.3MiB)
-Downloading pygments (1.2MiB)
-Downloading tensorstore (19.1MiB)
-Downloading jaxlib (76.0MiB)
-Downloading nvidia-nvjitlink-cu12 (37.4MiB)
-Downloading sympy (6.0MiB)
-Downloading nvidia-cublas-cu12 (566.8MiB)
-Downloading h5py (4.5MiB)
-Downloading jax (2.8MiB)
-Downloading nvidia-cuda-nvrtc-cu12 (84.0MiB)
-Downloading nvidia-cusolver-cu12 (255.1MiB)
-Downloading pillow (6.7MiB)
-Downloading keras (1.4MiB)
-Downloading nvidia-cuda-nvcc-cu12 (38.7MiB)
-Downloading tensorflow-io-gcs-filesystem (4.9MiB)
-Downloading ml-dtypes (4.7MiB)
-Downloading tf-keras (1.6MiB)
-Downloading pyqtgraph (1.8MiB)
-Downloading tensorflow (615.0MiB)
-Downloading grpcio (6.3MiB)
-Downloading jedi (1.5MiB)
-Downloading pyopengl (3.0MiB)
-Downloading libclang (23.4MiB)
-Downloading nvidia-cuda-cupti-cu12 (9.8MiB)
-Downloading nvidia-cusparse-cu12 (274.9MiB)
-Downloading scipy (34.2MiB)
-Downloading fonttools (4.7MiB)
-Downloading nvidia-nccl-cu12 (307.4MiB)
-Downloading matplotlib (8.3MiB)
-Downloading mujoco-mjx (6.6MiB)
-Downloading mujoco (6.5MiB)
-Downloading tensorboard-data-server (6.3MiB)
-Downloading numpy (15.6MiB)
-Downloading aiohttp (1.7MiB)
-Downloading tensorboard (5.2MiB)
-Downloading pydantic-core (2.0MiB)
-Downloading onnx (15.3MiB)
-Downloading nvidia-cufft-cu12 (184.2MiB)
-Downloading nvidia-cudnn-cu12 (674.0MiB)
-Downloading nvidia-nvshmem-cu12 (118.9MiB)
-Downloading jax-cuda12-plugin (5.3MiB)
-Downloading pyside6-essentials (89.9MiB)
-Downloading warp-lang (125.9MiB)
-Downloading pyglm (11.6MiB)
-Downloading onnxruntime (12.7MiB)
-Downloading mujoco-scenes (6.3MiB)
-Downloading tfp-nightly (6.7MiB)
-Downloading pyside6-addons (158.6MiB)
- Downloading kiwisolver
-Downloading setuptools (1.1MiB)
- Downloading pygments
- Downloading aiohttp
- Downloading pydantic-core
- Downloading pyqtgraph
- Downloading tf-keras
- Downloading keras
- Downloading jax
- Downloading setuptools
- Downloading h5py
- Downloading ml-dtypes
- Downloading fonttools
- Downloading cryptography
- Downloading tensorflow-io-gcs-filesystem
- Downloading tensorboard
-   Building kmv==0.3.22
- Downloading tensorboard-data-server
-   Building antlr4-python3-runtime==4.9.3
-   Building ksim==0.2.10
- Downloading mujoco
- Downloading grpcio
- Downloading pillow
- Downloading mujoco-mjx
- Downloading mujoco-scenes
- Downloading sympy
- Downloading jax-cuda12-plugin
- Downloading jedi
- Downloading matplotlib
-      Built kmv==0.3.22
- Downloading nvidia-cuda-cupti-cu12
-      Built ksim==0.2.10
-      Built antlr4-python3-runtime==4.9.3
- Downloading pyglm
- Downloading tfp-nightly
- Downloading numpy
- Downloading tensorstore
- Downloading libclang
- Downloading pyopengl
- Downloading nvidia-nvjitlink-cu12
- Downloading scipy
- Downloading nvidia-cuda-nvcc-cu12
- Downloading onnxruntime
- Downloading nvidia-cuda-nvrtc-cu12
- Downloading jaxlib
- Downloading nvidia-nvshmem-cu12
- Downloading jax-cuda12-pjrt
- Downloading nvidia-cufft-cu12
- Downloading nvidia-cusolver-cu12
- Downloading nvidia-cusparse-cu12
- Downloading nvidia-nccl-cu12
- Downloading nvidia-cublas-cu12
- Downloading nvidia-cudnn-cu12
- Downloading onnx
- Downloading pyside6-essentials
- Downloading warp-lang
- Downloading pyside6-addons
- Downloading tensorflow
-Prepared 164 packages in 2m 16s
-Installed 164 packages in 38.07s
- + absl-py==2.3.1
- + aiofiles==25.1.0
- + aiohappyeyeballs==2.6.1
- + aiohttp==3.13.2
- + aiosignal==1.4.0
- + annotated-types==0.7.0
- + antlr4-python3-runtime==4.9.3
- + anyio==4.11.0
- + asttokens==3.0.0
- + astunparse==1.6.3
- + async-lru==2.0.5
- + attrs==25.4.0
- + bvhio==1.5.4
- + certifi==2025.10.5
- + cffi==2.0.0
- + charset-normalizer==3.4.4
- + chex==0.1.91
- + click==8.3.0
- + cloudpickle==3.1.1
- + coloredlogs==15.0.1
- + colorlogging==0.0.2
- + contourpy==1.3.3
- + cryptography==46.0.3
- + cycler==0.12.1
- + decorator==5.2.1
- + distrax==0.1.7
- + dm-tree==0.1.9
- + dnspython==2.8.0
- + dpshdl==0.0.21
- + email-validator==2.3.0
- + equinox==0.13.2
- + etils==1.13.0
- + executing==2.2.1
- + flatbuffers==25.9.23
- + fonttools==4.60.1
- + frozenlist==1.8.0
- + fsspec==2025.10.0
- + gast==0.6.0
- + gitdb==4.0.12
- + gitpython==3.1.45
- + glfw==2.10.0
- + google-pasta==0.2.0
- + grpcio==1.76.0
- + h11==0.16.0
- + h5py==3.15.1
- + httpcore==1.0.9
- + httpx==0.28.1
- + humanfriendly==10.0
- + humanize==4.14.0
- + idna==3.11
- + importlib-resources==6.5.2
- + ipython==9.6.0
- + ipython-pygments-lexers==1.1.1
- + jax==0.8.0
- + jax-cuda12-pjrt==0.8.0
- + jax-cuda12-plugin==0.8.0
- + jaxlib==0.8.0
- + jaxtyping==0.3.3
- + jedi==0.19.2
- + keras==3.12.0
- + kinfer==0.6.1
- + kiwisolver==1.4.9
- + kmv==0.3.22
- + kscale==0.3.18
- + ksim==0.2.10
- + libclang==18.1.1
- + markdown==3.9
- + markdown-it-py==4.0.0
- + markupsafe==3.0.3
- + matplotlib==3.10.7
- + matplotlib-inline==0.2.1
- + mdurl==0.1.2
- + mediapy==1.2.4
- + ml-dtypes==0.5.3
- + mpmath==1.3.0
- + msgpack==1.1.2
- + mujoco==3.3.7
- + mujoco-mjx==3.3.7
- + mujoco-scenes==0.0.17
- + multidict==6.7.0
- + namex==0.1.0
- + nest-asyncio==1.6.0
- + numpy==2.1.3
- + nvidia-cublas-cu12==12.8.4.1
- + nvidia-cuda-cupti-cu12==12.8.90
- + nvidia-cuda-nvcc-cu12==12.9.86
- + nvidia-cuda-nvrtc-cu12==12.8.93
- + nvidia-cuda-runtime-cu12==12.8.90
- + nvidia-cudnn-cu12==9.10.2.21
- + nvidia-cufft-cu12==11.3.3.83
- + nvidia-cusolver-cu12==11.7.3.90
- + nvidia-cusparse-cu12==12.5.8.93
- + nvidia-nccl-cu12==2.27.5
- + nvidia-nvjitlink-cu12==12.8.93
- + nvidia-nvshmem-cu12==3.3.20
- + omegaconf==2.3.0
- + onnx==1.17.0
- + onnxruntime==1.20.0
- + opt-einsum==3.4.0
- + optax==0.2.6
- + optree==0.17.0
- + orbax-checkpoint==0.11.26
- + packaging==25.0
- + parso==0.8.5
- + pexpect==4.9.0
- + pillow==12.0.0
- + prompt-toolkit==3.0.52
- + propcache==0.4.1
- + protobuf==3.20.3
- + psutil==7.1.2
- + ptyprocess==0.7.0
- + pure-eval==0.2.3
- + pycparser==2.23
- + pydantic==2.12.3
- + pydantic-core==2.41.4
- + pyglm==2.8.2
- + pygments==2.19.2
- + pyjwt==2.10.1
- + pyopengl==3.1.10
- + pyparsing==3.2.5
- + pyqtgraph==0.13.7
- + pyside6==6.9.0
- + pyside6-addons==6.9.0
- + pyside6-essentials==6.9.0
- + python-dateutil==2.9.0.post0
- + pyyaml==6.0.3
- + requests==2.32.5
- + rich==14.2.0
- + scipy==1.16.3
- + setuptools==80.9.0
- + shiboken6==6.9.0
- + simplejson==3.20.2
- + six==1.17.0
- + smmap==5.0.2
- + sniffio==1.3.1
- + spatial-transform==1.3.3
- + stack-data==0.6.3
- + sympy==1.14.0
- + tabulate==0.9.0
- + tensorboard==2.19.0
- + tensorboard-data-server==0.7.2
- + tensorflow==2.19.1
- + tensorflow-io-gcs-filesystem==0.37.1
- + tensorstore==0.1.78
- + termcolor==3.2.0
- + tf-keras==2.19.0
- + tf2onnx==1.16.1
- + tfp-nightly==0.26.0.dev20251031
- + toolz==1.1.0
- + tqdm==4.67.1
- + traitlets==5.14.3
- + trimesh==4.9.0
- + typing-extensions==4.15.0
- + typing-inspection==0.4.2
- + urllib3==2.5.0
- + wadler-lindig==0.1.7
- + warp-lang==1.9.1
- + wcwidth==0.2.14
- + werkzeug==3.1.3
- + wheel==0.45.1
- + wrapt==2.0.0
- + xax==0.4.4
- + yarl==1.22.0
- + zipp==3.23.0
-2025-11-06 18:16:13.078104: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+Audited 164 packages in 157ms
+2025-11-06 18:24:02.020866: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-E0000 00:00:1762449373.094658 3665323 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-E0000 00:00:1762449373.099953 3665323 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-W0000 00:00:1762449373.114650 3665323 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1762449373.114695 3665323 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1762449373.114702 3665323 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1762449373.114720 3665323 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+E0000 00:00:1762449842.035913 2315627 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1762449842.040883 2315627 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1762449842.055533 2315627 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449842.055567 2315627 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449842.055579 2315627 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449842.055590 2315627 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
 /cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/utils/experiments.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
   import pkg_resources
+2025-11-06 18:24:24.047780: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1762449864.062344 2315634 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1762449864.067068 2315634 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1762449864.081186 2315634 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449864.081217 2315634 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449864.081229 2315634 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1762449864.081239 2315634 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/utils/experiments.py:32: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-06 18:24:37.279262: I external/xla/xla/pjrt/pjrt_api.cc:118] GetPjrtApi was found for cuda at /cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/jax_plugins/xla_cuda12/xla_cuda_plugin.so
+2025-11-06 18:24:37.279702: I external/xla/xla/pjrt/pjrt_api.cc:96] PJRT_Api is set for device type cuda
+INFO:2025-11-06 18:24:37,282:jax._src.xla_bridge:822: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+2025-11-06 18:24:37.283676: I external/xla/xla/pjrt/pjrt_api.cc:167] The PJRT plugin has PJRT API version 0.75. The framework PJRT API version is 0.75.
+2025-11-06 18:24:37.485292: I external/xla/xla/service/service.cc:163] XLA service 0xa5c3900 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2025-11-06 18:24:37.485424: I external/xla/xla/service/service.cc:171]   StreamExecutor device (0): NVIDIA A100-SXM4-80GB, Compute Capability 8.0
+2025-11-06 18:24:37.495052: I external/xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 91301
+2025-11-06 18:24:37.495314: I external/xla/xla/pjrt/pjrt_c_api_client.cc:133] PjRtCApiClient created.
 Traceback (most recent call last):
-  File "/cluster/work/sebasrb/zeroth-walking/train4.py", line 1477, in <module>
-    class ZbotWalkingTask(ksim.PPOTask[ZbotWalkingTaskConfig]):
-  File "/cluster/work/sebasrb/zeroth-walking/train4.py", line 1902, in ZbotWalkingTask
-    def get_model(self, params: ksim.task.rl.InitParams) -> Model:
-                                ^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: module 'ksim.task.rl' has no attribute 'InitParams'
+  File "/cluster/work/sebasrb/zeroth-walking/train4.py", line 2086, in <module>
+    ZbotWalkingTask.launch(
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/mixins/runnable.py", line 50, in launch
+    launcher.launch(cls, *cfgs, use_cli=use_cli)
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/launchers/cli.py", line 40, in launch
+    SingleProcessLauncher().launch(task, *cfgs, use_cli=use_cli_next)
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/launchers/single_process.py", line 31, in launch
+    run_single_process_training(task, *cfgs, use_cli=use_cli)
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/launchers/single_process.py", line 21, in run_single_process_training
+    task_obj.run()
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/ksim/task/rl.py", line 1026, in run
+    self.run_training()
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/ksim/task/rl.py", line 2158, in run_training
+    constants, carry, state = self.initialize_rl_training(mj_model, rng)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/ksim/task/rl.py", line 2071, in initialize_rl_training
+    models, optimizers, opt_states, state = self.load_initial_state(model_rng, load_optimizer=True)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/mixins/train.py", line 392, in load_initial_state
+    models = self._get_models(key)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages/xax/task/mixins/train.py", line 320, in _get_models
+    models = self.get_model(key)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/cluster/work/sebasrb/zeroth-walking/train4.py", line 1904, in get_model
+    params.key,
+    ^^^^^^^^^^
+AttributeError: 'jaxlib._jax.ArrayImpl' object has no attribute 'key'
