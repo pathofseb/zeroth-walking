@@ -1,7 +1,7 @@
 Running from directory: 
 Job name: zbot-train-walk10
-Job ID: 23298631
-Node(s): idun-07-07
+Job ID: 23298707
+Node(s): idun-07-10
 Requirement already satisfied: uv in /cluster/work/sebasrb/zeroth/env/lib/python3.11/site-packages (0.9.7)
 Installed dependencies:
 absl-py==2.3.1
@@ -236,15 +236,17 @@ zipp==3.23.0
 Checking JAX backend:
 gpu
 Set MUJOCO_GL=osmesa for headless rendering
-  [1;36mINFO[0m  [90m2025-11-06 18:25:04[0m [[1;34mxax.task.mixins.compile[0m] Setting JAX logging level to INFO
-  [1;36mINFO[0m  [90m2025-11-06 18:25:04[0m [[1;34mxax.task.mixins.compile[0m] Setting JAX compilation cache directory to /cluster/home/sebasrb/.cache/jax/jaxcache
-  [1;36mINFO[0m  [90m2025-11-06 18:25:04[0m [[1;34mxax.task.mixins.compile[0m] Configuring JAX compilation cache parameters
- [1;32mSTATUS[0m [90m2025-11-06 18:25:04[0m [[1;34mxax.task.mixins.artifacts[0m] /cluster/work/sebasrb/zeroth-walking/zbot_walking_task/run_8
-  [1;36mINFO[0m  [90m2025-11-06 18:25:04[0m [[1;34mjax._src.xla_bridge[0m] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
- [1;32mSTATUS[0m [90m2025-11-06 18:25:05[0m [[1;34mxax.task.mixins.train[0m] /cluster/work/sebasrb/zeroth-walking/train10.py
+  [1;36mINFO[0m  [90m2025-11-06 18:28:00[0m [[1;34mxax.task.mixins.compile[0m] Setting JAX logging level to INFO
+  [1;36mINFO[0m  [90m2025-11-06 18:28:00[0m [[1;34mxax.task.mixins.compile[0m] Setting JAX compilation cache directory to /cluster/home/sebasrb/.cache/jax/jaxcache
+  [1;36mINFO[0m  [90m2025-11-06 18:28:00[0m [[1;34mxax.task.mixins.compile[0m] Configuring JAX compilation cache parameters
+ [1;32mSTATUS[0m [90m2025-11-06 18:28:00[0m [[1;34mxax.task.mixins.artifacts[0m] /cluster/work/sebasrb/zeroth-walking/zbot_walking_task/run_15
+  [1;36mINFO[0m  [90m2025-11-06 18:28:00[0m [[1;34mjax._src.xla_bridge[0m] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+ [1;32mSTATUS[0m [90m2025-11-06 18:28:01[0m [[1;34mxax.task.mixins.train[0m] /cluster/work/sebasrb/zeroth-walking/train10.py
 {"status": {"message": "/cluster/work/sebasrb/zeroth-walking/train10.py", "filename": "train.py", "lineno": 714}}
- [1;32mSTATUS[0m [90m2025-11-06 18:25:05[0m [[1;34mxax.task.mixins.train[0m] zbot_walking_task
+ [1;32mSTATUS[0m [90m2025-11-06 18:28:01[0m [[1;34mxax.task.mixins.train[0m] zbot_walking_task
 {"status": {"message": "zbot_walking_task", "filename": "train.py", "lineno": 715}}
- [1;32mSTATUS[0m [90m2025-11-06 18:25:05[0m [[1;34mxax.task.mixins.train[0m] JAX devices: [CudaDevice(id=0)]
+ [1;32mSTATUS[0m [90m2025-11-06 18:28:01[0m [[1;34mxax.task.mixins.train[0m] JAX devices: [CudaDevice(id=0)]
 {"status": {"message": "JAX devices: [CudaDevice(id=0)]", "filename": "train.py", "lineno": 716}}
-  [1;36mINFO[0m  [90m2025-11-06 18:25:06[0m [[1;34mxax.task.mixins.train[0m] Starting a new training run
+  [1;36mINFO[0m  [90m2025-11-06 18:28:02[0m [[1;34mxax.task.mixins.train[0m] Starting a new training run
+Training used directory: zbot_walking_task/run_17 (run_17)
+Job finished
