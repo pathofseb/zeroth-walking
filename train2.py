@@ -1723,13 +1723,8 @@ class ZbotWalkingTask(ksim.PPOTask[ZbotWalkingTaskConfig]):
         }
 
     def get_events(self, physics_model: ksim.PhysicsModel) -> dict[str, ksim.Event]:
-        return {
-            "push": ksim.LinearPushEvent(
-                linvel=1.0,
-                vel_range=(0.5, 1.0),
-                interval_range=(0.5, 4.0),
-            ),
-        }
+        # LinearPushEvent removed in ksim 0.2.10
+        return {}
 
     def get_resets(self, physics_model: ksim.PhysicsModel) -> tuple[ksim.Reset, ...]:
         return (
