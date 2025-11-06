@@ -30,7 +30,7 @@ def main() -> None:
     mujoco_model = task.get_mujoco_model()
 
     # Create init params for model loading
-    init_params = ksim.task.rl.InitParams(key=jax.random.PRNGKey(0), physics_model=mujoco_model)
+    init_params = ksim.InitParams(key=jax.random.PRNGKey(0), physics_model=mujoco_model)
     model: Model = task.load_ckpt(ckpt_path, part="model", init_params=init_params)[0]
 
     joint_names = ksim.get_joint_names_in_order(mujoco_model)[1:]  # Removes root joint
