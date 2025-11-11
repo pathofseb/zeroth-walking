@@ -1,0 +1,14 @@
+ksim==0.2.10
+xax==0.4.4
+distrax==0.1.7
+equinox==0.13.2
+attrs==25.4.0
+mujoco==3.3.7
+mujoco-mjx==3.3.7
+mujoco-scenes==0.0.17
+kinfer>=0.6.1
+jax[cuda12]
+tensorflow
+tf-keras
+tf2onnx
+warp-lang>=1.9.1

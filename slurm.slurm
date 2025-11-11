@@ -37,10 +37,12 @@ fi
 # Use Python directly from the environment (don't rely on activation)
 source activate ${ENV_PATH}
 
-# Install uv if not already installed
-pip install -r requirements.txt
-
-# Install dependencies using uv
+# Install dependencies from requirements.txt
+if [ -f "requirements.txt" ]; then
+  pip install -r requirements.txt
+else
+  echo "Warning: requirements.txt not found"
+fi
 
 echo "Installed dependencies:"
 pip freeze
