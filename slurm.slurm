@@ -24,7 +24,7 @@ echo "Node(s): $SLURM_JOB_NODELIST"
 mkdir -p slurm_outputs
 
 # Path to your conda env (change if needed)
-ENV_PATH="/cluster/work/$USER/zeroth/env/"
+ENV_PATH="/cluster/work/$USER/ksim-zeroth/env/"
 
 module purge
 module load Anaconda3/2024.02-1
@@ -38,10 +38,9 @@ fi
 source activate ${ENV_PATH}
 
 # Install uv if not already installed
-pip install uv
+pip install -r requirements.txt
 
 # Install dependencies using uv
-uv sync
 
 echo "Installed dependencies:"
 pip freeze
@@ -61,20 +60,6 @@ python train.py
 
 # Example: to load pretrained checkpoint and run in view mode, uncomment:
 # python train.py load_from_ckpt_path=zbot_walking_task/run_9/checkpoints/ckpt.bin # run_mode=view
-
-# Find the run directory that was created/used
-RUN_DIR=$(ls -td zbot_walking_task/run_* 2>/dev/null | head -1)
-if [ -n "$RUN_DIR" ]; then
-  RUN_NUM=$(basename "$RUN_DIR")
-  echo "Training used directory: $RUN_DIR ($RUN_NUM)"
-
-  # Rename SLURM output files to use run number instead of job ID
-  
-
-  
-else
-  echo "Warning: Could not find run directory"
-fi
 
 conda deactivate
 

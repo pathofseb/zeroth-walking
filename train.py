@@ -6,7 +6,7 @@ import math
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Self, TypedDict
+from typing import Self, TypedDict
 
 import attrs
 import distrax
@@ -1723,8 +1723,13 @@ class ZbotWalkingTask(ksim.PPOTask[ZbotWalkingTaskConfig]):
         }
 
     def get_events(self, physics_model: ksim.PhysicsModel) -> dict[str, ksim.Event]:
-        # LinearPushEvent removed in ksim 0.2.10
-        return {}
+        return {
+            "push": ksim.LinearPushEvent(
+                linvel=1.0,
+                vel_range=(0.5, 1.0),
+                interval_range=(0.5, 4.0),
+            ),
+        }
 
     def get_resets(self, physics_model: ksim.PhysicsModel) -> tuple[ksim.Reset, ...]:
         return (
@@ -1894,9 +1899,9 @@ class ZbotWalkingTask(ksim.PPOTask[ZbotWalkingTaskConfig]):
             min_level=0.5,
         )
 
-    def get_model(self, params: Any) -> Model:
+    def get_model(self, params: ksim.task.rl.InitParams) -> Model:
         return Model(
-            params,
+            params.key,
             num_inputs=NUM_ACTOR_INPUTS,
             num_outputs=NUM_JOINTS,
             min_std=0.03,
