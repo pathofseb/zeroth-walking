@@ -1,90 +1,275 @@
 Running from directory: 
 Job name: zbot-train-walk1
-Job ID: 23298441
-Node(s): idun-09-18
-Collecting uv
-  Using cached uv-0.9.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
-Downloading uv-0.9.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (21.4 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.4/21.4 MB 6.8 MB/s  0:00:03
-Installing collected packages: uv
+Job ID: 23365159
+Node(s): idun-09-16
+Retrieving notices: - \ | / - \ | / done
+Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /cluster/work/sebasrb/ksim-zeroth/env
+
+  added / updated specs:
+    - python=3.11
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2025.11.4  |       h06a4308_0         128 KB
+    expat-2.7.3                |       h3385a95_0         167 KB
+    libgcc-15.2.0              |       h69a1729_7         806 KB
+    libgcc-ng-15.2.0           |       h166f726_7          28 KB
+    libgomp-15.2.0             |       h4751f2c_7         436 KB
+    libstdcxx-15.2.0           |       h39759b7_7         3.7 MB
+    libstdcxx-ng-15.2.0        |       hc03a8fd_7          28 KB
+    sqlite-3.51.0              |       h2a70700_0         1.2 MB
+    ------------------------------------------------------------
+                                           Total:         6.4 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main 
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu 
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h5eee18b_6 
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2025.11.4-h06a4308_0 
+  expat              pkgs/main/linux-64::expat-2.7.3-h3385a95_0 
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.44-h153f514_2 
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_1 
+  libgcc             pkgs/main/linux-64::libgcc-15.2.0-h69a1729_7 
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-15.2.0-h166f726_7 
+  libgomp            pkgs/main/linux-64::libgomp-15.2.0-h4751f2c_7 
+  libnsl             pkgs/main/linux-64::libnsl-2.0.0-h5eee18b_0 
+  libstdcxx          pkgs/main/linux-64::libstdcxx-15.2.0-h39759b7_7 
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-15.2.0-hc03a8fd_7 
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0 
+  libxcb             pkgs/main/linux-64::libxcb-1.17.0-h9b100fa_0 
+  libzlib            pkgs/main/linux-64::libzlib-1.3.1-hb25bd0a_0 
+  ncurses            pkgs/main/linux-64::ncurses-6.5-h7934f7d_0 
+  openssl            pkgs/main/linux-64::openssl-3.0.18-hd6dcaed_0 
+  pip                pkgs/main/noarch::pip-25.2-pyhc872135_1 
+  pthread-stubs      pkgs/main/linux-64::pthread-stubs-0.3-h0ce48e5_1 
+  python             pkgs/main/linux-64::python-3.11.14-h6fa692b_0 
+  readline           pkgs/main/linux-64::readline-8.3-hc2a1206_0 
+  setuptools         pkgs/main/linux-64::setuptools-80.9.0-py311h06a4308_0 
+  sqlite             pkgs/main/linux-64::sqlite-3.51.0-h2a70700_0 
+  tk                 pkgs/main/linux-64::tk-8.6.15-h54e0aa7_0 
+  tzdata             pkgs/main/noarch::tzdata-2025b-h04d1e81_0 
+  wheel              pkgs/main/linux-64::wheel-0.45.1-py311h06a4308_0 
+  xorg-libx11        pkgs/main/linux-64::xorg-libx11-1.8.12-h9b100fa_1 
+  xorg-libxau        pkgs/main/linux-64::xorg-libxau-1.0.12-h9b100fa_0 
+  xorg-libxdmcp      pkgs/main/linux-64::xorg-libxdmcp-1.1.5-h9b100fa_0 
+  xorg-xorgproto     pkgs/main/linux-64::xorg-xorgproto-2024.1-h5eee18b_1 
+  xz                 pkgs/main/linux-64::xz-5.6.4-h5eee18b_1 
+  zlib               pkgs/main/linux-64::zlib-1.3.1-hb25bd0a_0 
+
+
+
+Downloading and Extracting Packages: ...working...libstdcxx-15.2.0     | 3.7 MB    |            |   0% 
+sqlite-3.51.0        | 1.2 MB    |            |   0% [A
+
+libgcc-15.2.0        | 806 KB    |            |   0% [A[A
+
+
+libgomp-15.2.0       | 436 KB    |            |   0% [A[A[A
+
+
+
+expat-2.7.3          | 167 KB    |            |   0% [A[A[A[A
+
+
+
+
+ca-certificates-2025 | 128 KB    |            |   0% [A[A[A[A[A
+
+
+
+
+
+libstdcxx-ng-15.2.0  | 28 KB     |            |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+libgcc-ng-15.2.0     | 28 KB     |            |   0% [A[A[A[A[A[A[A
+sqlite-3.51.0        | 1.2 MB    | 1          |   1% [Alibstdcxx-15.2.0     | 3.7 MB    |            |   0% 
+
+
+libgomp-15.2.0       | 436 KB    | 3          |   4% [A[A[A
+
+
+
+expat-2.7.3          | 167 KB    | 9          |  10% [A[A[A[A
+
+
+
+expat-2.7.3          | 167 KB    | ########## | 100% [A[A[A[A
+
+libgcc-15.2.0        | 806 KB    | 1          |   2% [A[A
+
+
+libgomp-15.2.0       | 436 KB    | ########## | 100% [A[A[A
+sqlite-3.51.0        | 1.2 MB    | ########## | 100% [A
+
+
+
+
+ca-certificates-2025 | 128 KB    | #2         |  12% [A[A[A[A[A
+
+
+
+
+ca-certificates-2025 | 128 KB    | ########## | 100% [A[A[A[A[A
+
+libgcc-15.2.0        | 806 KB    | ########## | 100% [A[A
+
+
+
+
+
+libstdcxx-ng-15.2.0  | 28 KB     | #####7     |  58% [A[A[A[A[A[A
+
+
+
+
+
+libstdcxx-ng-15.2.0  | 28 KB     | ########## | 100% [A[A[A[A[A[Alibstdcxx-15.2.0     | 3.7 MB    | ########## | 100% libstdcxx-15.2.0     | 3.7 MB    | ########## | 100% 
+
+
+
+
+
+
+libgcc-ng-15.2.0     | 28 KB     | #####7     |  58% [A[A[A[A[A[A[A
+
+
+
+
+
+
+libgcc-ng-15.2.0     | 28 KB     | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+expat-2.7.3          | 167 KB    | ########## | 100% [A[A[A[A
+
+
+
+expat-2.7.3          | 167 KB    | ########## | 100% [A[A[A[A
+sqlite-3.51.0        | 1.2 MB    | ########## | 100% [A
+sqlite-3.51.0        | 1.2 MB    | ########## | 100% [A
+
+
+
+
+ca-certificates-2025 | 128 KB    | ########## | 100% [A[A[A[A[A
+
+
+
+
+ca-certificates-2025 | 128 KB    | ########## | 100% [A[A[A[A[A
+
+
+libgomp-15.2.0       | 436 KB    | ########## | 100% [A[A[A
+
+
+libgomp-15.2.0       | 436 KB    | ########## | 100% [A[A[A
+
+
+
+
+
+libstdcxx-ng-15.2.0  | 28 KB     | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+libstdcxx-ng-15.2.0  | 28 KB     | ########## | 100% [A[A[A[A[A[A
+
+libgcc-15.2.0        | 806 KB    | ########## | 100% [A[A
+
+libgcc-15.2.0        | 806 KB    | ########## | 100% [A[Alibstdcxx-15.2.0     | 3.7 MB    | ########## | 100% 
+
+
+
+
+
+
+libgcc-ng-15.2.0     | 28 KB     | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+libgcc-ng-15.2.0     | 28 KB     | ########## | 100% [A[A[A[A[A[A[A                                                     
+                                                     [A
+
+                                                     [A[A
+
+
+                                                     [A[A[A
+
+
+
+                                                     [A[A[A[A
+
+
+
+
+                                                     [A[A[A[A[A
+
+
+
+
+
+                                                     [A[A[A[A[A[A
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A done
+Preparing transaction: \ | / - \ | / - \ done
+Verifying transaction: / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | done
+Executing transaction: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ done
+#
+# To activate this environment, use
+#
+#     $ conda activate /cluster/work/sebasrb/ksim-zeroth/env
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
 Installed dependencies:
-absl-py==2.3.1
-aiofiles==25.1.0
-aiohappyeyeballs==2.6.1
-aiohttp==3.13.2
-aiosignal==1.4.0
-annotated-types==0.7.0
-antlr4-python3-runtime==4.9.3
-anyio==4.11.0
 argon2-cffi==25.1.0
 argon2-cffi-bindings==25.1.0
 arrow==1.3.0
-asttokens==3.0.0
-astunparse==1.6.3
-async-lru==2.0.5
-attrs==25.4.0
 babel==2.17.0
 beautifulsoup4==4.14.2
 bleach==6.2.0
-bvhio==1.5.4
-certifi==2025.10.5
-cffi==2.0.0
 cfgv==3.4.0
-charset-normalizer==3.4.4
-chex==0.1.91
-click==8.3.0
-cloudpickle==3.1.1
-coloredlogs==15.0.1
-colorlogging==0.0.2
 comm==0.2.3
-contourpy==1.3.3
-cryptography==46.0.3
-cycler==0.12.1
 debugpy==1.8.17
-decorator==5.2.1
 defusedxml==0.7.1
 distlib==0.4.0
-distrax==0.1.7
-dm-tree==0.1.9
-dnspython==2.8.0
-dpshdl==0.0.21
-email-validator==2.3.0
-equinox==0.13.0
-etils==1.13.0
-executing==2.2.1
 fastjsonschema==2.21.2
 filelock==3.19.1
-flatbuffers==25.9.23
-fonttools==4.60.1
 fqdn==1.5.1
-frozenlist==1.8.0
-fsspec==2025.10.0
-gast==0.6.0
-gitdb==4.0.12
-GitPython==3.1.45
-glfw==2.10.0
-google-pasta==0.2.0
-grpcio==1.76.0
-h11==0.16.0
-h5py==3.15.1
-httpcore==1.0.9
-httpx==0.28.1
-humanfriendly==10.0
-humanize==4.14.0
 identify==2.6.14
-idna==3.11
-importlib_resources==6.5.2
 ipykernel==6.30.1
-ipython==9.6.0
-ipython_pygments_lexers==1.1.1
 ipywidgets==8.1.7
 isoduration==20.11.0
-jax==0.7.1
-jax-cuda12-pjrt==0.7.1
-jax-cuda12-plugin==0.7.1
-jaxlib==0.7.1
-jaxtyping==0.3.3
-jedi==0.19.2
 Jinja2==3.1.6
 json5==0.12.1
 jsonpointer==3.0.0
@@ -102,38 +287,14 @@ jupyterlab==4.4.9
 jupyterlab_pygments==0.3.0
 jupyterlab_server==2.27.3
 jupyterlab_widgets==3.0.15
-keras==3.12.0
-kinfer==0.6.1
-kiwisolver==1.4.9
-kmv==0.3.22
-kscale==0.3.18
-ksim==0.1.95
 lark==1.3.0
-libclang==18.1.1
-Markdown==3.9
-markdown-it-py==4.0.0
-MarkupSafe==3.0.3
-matplotlib==3.10.7
-matplotlib-inline==0.2.1
-mdurl==0.1.2
-mediapy==1.2.4
 mistune==3.1.4
-ml_dtypes==0.5.3
-mpmath==1.3.0
-msgpack==1.1.2
-mujoco==3.3.7
-mujoco-mjx==3.3.7
-mujoco-scenes==0.0.17
-multidict==6.7.0
-namex==0.1.0
 nbclient==0.10.2
 nbconvert==7.16.6
 nbformat==5.10.4
-nest-asyncio==1.6.0
 nodeenv==1.9.1
 notebook==7.4.7
 notebook_shim==0.2.4
-numpy==1.26.4
 nvidia-cublas-cu12==12.9.1.4
 nvidia-cuda-cupti-cu12==12.9.79
 nvidia-cuda-nvcc-cu12==12.9.86
@@ -146,99 +307,30 @@ nvidia-cusparse-cu12==12.5.10.65
 nvidia-nccl-cu12==2.28.3
 nvidia-nvjitlink-cu12==12.9.86
 nvidia-nvshmem-cu12==3.4.5
-omegaconf==2.3.0
-onnx==1.17.0
-onnxruntime==1.20.0
-opt_einsum==3.4.0
-optax==0.2.6
-optree==0.17.0
-orbax-checkpoint==0.11.26
 overrides==7.7.0
-packaging==25.0
 pandocfilters==1.5.1
-parso==0.8.5
-pexpect==4.9.0
-pillow==12.0.0
 platformdirs==4.4.0
 pre_commit==4.3.0
 prometheus_client==0.23.1
-prompt_toolkit==3.0.52
-propcache==0.4.1
-protobuf==3.20.3
-psutil==7.1.3
-ptyprocess==0.7.0
-pure_eval==0.2.3
-pycparser==2.23
-pydantic==2.12.3
-pydantic_core==2.41.4
-pyglm==2.8.2
-Pygments==2.19.2
-PyJWT==2.10.1
-PyOpenGL==3.1.10
-pyparsing==3.2.5
-pyqtgraph==0.13.7
-PySide6==6.9.0
-PySide6_Addons==6.9.0
-PySide6_Essentials==6.9.0
-python-dateutil==2.9.0.post0
 python-json-logger==3.3.0
-PyYAML==6.0.3
 pyzmq==27.1.0
 referencing==0.36.2
-requests==2.32.5
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
 rfc3987-syntax==1.1.0
-rich==14.2.0
 rpds-py==0.27.1
-scipy==1.16.3
 Send2Trash==1.8.3
-shiboken6==6.9.0
-simplejson==3.20.2
-six==1.17.0
-smmap==5.0.2
-sniffio==1.3.1
 soupsieve==2.8
-spatial-transform==1.3.3
-stack-data==0.6.3
-sympy==1.14.0
-tabulate==0.9.0
-tensorboard==2.19.0
-tensorboard-data-server==0.7.2
-tensorflow==2.19.1
-tensorflow-io-gcs-filesystem==0.37.1
-tensorstore==0.1.78
-termcolor==3.2.0
 terminado==0.18.1
-tf2onnx==1.16.1
-tfp-nightly==0.26.0.dev20251102
 tinycss2==1.4.0
-toolz==1.1.0
 tornado==6.5.2
-tqdm==4.67.1
-traitlets==5.14.3
-trimesh==4.9.0
 types-python-dateutil==2.9.0.20250822
-typing-inspection==0.4.2
-typing_extensions==4.15.0
 uri-template==1.3.0
-urllib3==2.5.0
-uv==0.9.7
 virtualenv==20.34.0
-wadler_lindig==0.1.7
-warp-lang==1.10.0
-wcwidth==0.2.14
 webcolors==24.11.1
 webencodings==0.5.1
 websocket-client==1.8.0
-Werkzeug==3.1.3
 widgetsnbextension==4.0.14
-wrapt==2.0.0
-xax==0.3.5
-yarl==1.22.0
-zipp==3.23.0
 Checking JAX backend:
-gpu
 Set MUJOCO_GL=osmesa for headless rendering
-Warning: Could not find run directory
 Job finished
